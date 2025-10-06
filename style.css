@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff9800;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    text-shadow: 2px 2px 8px black;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f4f4f4;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80') center/cover no-repeat;
+    height: 70vh;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 10px black;
+    max-width: 800px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff9800;
+    padding-left: 10px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.capa {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.capa img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.capa img:hover {
+    transform: scale(1.05);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ff9800;
+}
+
+footer p {
+    color: #bbb;
+}
+
+
+.container img {
+    display: block;
+    margin: 40px auto;
+    width: 280px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+
+.comprar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao-compra {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-compra:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+
+.amazon {
+    background: #FF9900;
+}
+
+.saraiva {
+    background: #222;
+}
+
+.cultura {
+    background: #0066CC;
+}
+
+.estante {
+    background: #4CAF50;
+}
+
+@media (max-width: 600px) {
+    .botao-compra {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* ==== Cartões de personagens com expansão ==== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    color: #f4f4f4;
+  }
+  
+  .card h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .card .extra {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+
+  .card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .card:hover .extra {
+    max-height: 200px; 
+    opacity: 1;
+  }
+  

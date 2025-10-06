@@ -1,162 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Filhos do Quarto – Elisabete Baptista</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f4f4f4;
-      line-height: 1.6;
-      
-    }
-
-    header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #ff9800;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #ff9800;
-      text-shadow: 2px 2px 8px black;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #f4f4f4;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff9800;
-    }
-
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 50px 20px;
-      background: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80') center/cover no-repeat;
-      height: 70vh;
-      color: white;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      text-shadow: 3px 3px 10px black;
-      max-width: 800px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .section {
-      margin-bottom: 60px;
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-left: 5px solid #ff9800;
-      padding-left: 10px;
-    }
-
-    .section p {
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-    }
-
-    .capa {
-      display: flex;
-      justify-content: center;
-      margin: 30px 0;
-    }
-
-    .capa img {
-      width: 250px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-      transition: 0.3s;
-    }
-
-    .capa img:hover {
-      transform: scale(1.05);
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 15px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      color: #ff9800;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      margin-top: 10px;
-      margin-left: 20px;
-    }
-
-    footer {
-      background: #111;
-      padding: 20px;
-      text-align: center;
-      border-top: 2px solid #ff9800;
-    }
-
-    footer p {
-      color: #bbb;
-    }
-  </style>
+  <title>Filhos do Quarto – Página Inicial</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
     <h1>📖 Filhos do Quarto</h1>
     <nav>
-      <a href="#resumo">Resumo</a>
-      <a href="#personagens">Personagens</a>
-      <a href="#curiosidades">Curiosidades</a>
+      <a href="index.html">Início</a>
+      <a href="autora.html">Autora</a>
+      <a href="personagens.html">Personagens</a>
+      <a href="resumo.html">Resumo</a>
+      <a href="curiosidades.html">Curiosidades</a>
     </nav>
   </header>
 
@@ -165,54 +26,65 @@
   </section>
 
   <div class="container">
-
-    <section id="resumo" class="section">
-      <h2>Resumo do Livro</h2>
-      <div class="capa">
-        <img src="IMG/FILHOS_DO_QUARTO_1703032029122401352SK-V11703032030B.webp" alt="Capa do livro Filhos do Quarto">
-      </div>
+    <section class="section">
+      <h2>Bem-vindo(a) ao universo de <em>Filhos do Quarto</em></h2>
       <p>
-        <strong>Filhos do Quarto</strong>, de <em>Elisabete Baptista</em>, é um livro que mergulha nas dores e silêncios
-        que muitos jovens carregam dentro de si. O quarto, símbolo de refúgio e isolamento,
-        torna-se metáfora para os conflitos emocionais, como bullying, luto, assédio moral e inseguranças
-        que marcam a vida adolescente. 
-      </p>
-      <p>
-        A obra busca despertar a consciência de que é possível transformar a dor em aprendizado
-        e encontrar no amor, na solidariedade e no diálogo caminhos para superar os traumas
-        e reencontrar a própria luz.
+        Este site foi criado como uma homenagem à emocionante obra <strong>“Filhos do Quarto”</strong>, escrita por
+        <em>Elisabete Baptista</em>. Aqui você encontrará informações sobre a autora, curiosidades, personagens
+        marcantes
+        e o resumo do livro que tem tocado tantos corações.
       </p>
     </section>
 
-    <section id="personagens" class="section">
-      <h2>Personagens Principais</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Laura</h3>
-          <p>Uma jovem que enfrenta o bullying na escola e luta para reencontrar sua autoestima.</p>
-        </div>
-        <div class="card">
-          <h3>Gabriel</h3>
-          <p>Carrega o peso do luto e busca forças para lidar com a ausência de quem ama.</p>
-        </div>
-        <div class="card">
-          <h3>Professora Clara</h3>
-          <p>Figura essencial que orienta e incentiva os alunos a não se renderem ao silêncio.</p>
-        </div>
+
+
+    <div class="container">
+      <section class="section">
+        <h2>Curiosidades sobre a Obra</h2>
+        <ul>
+          <li><strong>Publicação:</strong> O livro foi lançado em 2023 pela Editora Suinara, conhecida por apoiar
+            autores que promovem a leitura reflexiva entre adolescentes.</li>
+          <li><strong>Inspiração:</strong> Elisabete Baptista inspirou-se em histórias reais de jovens que
+            enfrentam o silêncio e o medo de falar sobre suas dores.</li>
+          <li><strong>Arte e Ilustração:</strong> As ilustrações de <em>Robson Araújo</em> complementam o tom
+            emocional da narrativa, com traços delicados e simbólicos.</li>
+          <li><strong>Adaptações:</strong> O livro tem sido utilizado em projetos escolares e rodas de leitura
+            para discutir saúde mental e convivência.</li>
+          <li><strong>Mensagem central:</strong> A luz interior de cada pessoa pode transformar não só o próprio
+            quarto, mas também o mundo ao redor.</li>
+        </ul>
+
+        <p><em>“Filhos do Quarto”</em> é mais do que uma história — é um espelho sensível da juventude atual. Cada
+          página é um convite à empatia, à escuta e à valorização da vida.</p>
+      </section>
+    </div>
+
+
+
+
+    
+    <section class="section">
+      <h2>Onde comprar o livro</h2>
+      <p>Encontramos o livro em várias lojas online. Clique no botão da loja de sua preferência para ir diretamente à
+        página do produto.</p>
+
+      <div class="comprar">
+        <a href="https://www.amazon.com.br/Filhos-do-Quarto-Elisabete-Baptista/dp/6584690075" target="_blank"
+          rel="noopener noreferrer" class="botao-compra amazon">📦 Amazon</a>
+
+        <a href="https://www.estantevirtual.com.br/busca/filhos-do-quarto" target="_blank" rel="noopener noreferrer"
+          class="botao-compra estante">💫 Estante Virtual - Ofertas</a>
+
+        <a href="https://produto.mercadolivre.com.br/MLB-3402320999-filhos-do-quarto-_JM" target="_blank"
+          rel="noopener noreferrer" class="botao-compra mercadolivre">🛒 Mercado Livre - Anúncio</a>
+
+        <a href="https://www.magazineluiza.com.br/filhos-do-quarto-suinara/p/kecacc676d/li/liao/" target="_blank"
+          rel="noopener noreferrer" class="botao-compra magazineluiza">🏬 Magazine Luiza - Produto</a>
+
+        <a href="https://www.curtalivros.com.br/produto/filhos-do-quarto" target="_blank" rel="noopener noreferrer"
+          class="botao-compra curtalivros">📚 CurtaLivros - Produto</a>
       </div>
     </section>
-
-    <section id="curiosidades" class="section">
-      <h2>Curiosidades</h2>
-      <ul>
-        <li>O livro foi publicado pela Editora Suinara em 2023.</li>
-        <li>Trata de temas atuais como bullying, assédio moral, luto e resiliência.</li>
-        <li>É indicado para adolescentes a partir do 8º ano.</li>
-        <li>A autora, Elisabete Baptista, é também historiadora e contadora de histórias.</li>
-        <li>A obra foi ilustrada por <strong>Robson Araújo</strong>.</li>
-      </ul>
-    </section>
-
   </div>
 
   <footer>
@@ -220,4 +92,5 @@
   </footer>
 
 </body>
+
 </html>
