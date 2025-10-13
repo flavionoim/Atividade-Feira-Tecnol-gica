@@ -203,14 +203,14 @@ footer p {
     }
 }
 
-/* ==== Cartões de personagens com expansão ==== */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-  }
-  
-  .card {
+}
+
+.card {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 15px;
@@ -219,33 +219,32 @@ footer p {
     position: relative;
     cursor: pointer;
     color: #f4f4f4;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     color: #ff9800;
     margin-bottom: 10px;
-  }
-  
-  .card p {
+}
+
+.card p {
     font-size: 1rem;
     margin-bottom: 10px;
-  }
+}
 
-  .card .extra {
+.card .extra {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.3s ease;
     opacity: 0;
-  }
-  
+}
 
-  .card:hover {
+
+.card:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
-  }
-  
-  .card:hover .extra {
-    max-height: 200px; 
+}
+
+.card:hover .extra {
+    max-height: 200px;
     opacity: 1;
-  }
-  
+}
